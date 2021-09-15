@@ -6,12 +6,14 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 
 import it.vscalcione.springboot.demoapplication.model.Location;
 import it.vscalcione.springboot.demoapplication.model.User;
 import it.vscalcione.springboot.demoapplication.repository.LocationRepository;
 import it.vscalcione.springboot.demoapplication.repository.UserRepository;
 
+@ComponentScan("it.vscalcione.springboot.demoapplication")
 @SpringBootApplication
 public class SpringbootDemoApplication implements CommandLineRunner{
 
